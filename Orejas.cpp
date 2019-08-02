@@ -11,7 +11,7 @@ class Orejas{
 	private:
 		
 		string tamanio;
-		string capacidad_audicion;
+		int capacidad_audicion;
 		
 		
 	protected:
@@ -22,7 +22,7 @@ class Orejas{
 			
 		}//Fin del constructor simple
 		
-		Orejas(string tamanio,string capacidad_audicion){
+		Orejas(string tamanio,int capacidad_audicion){
 		
 			this-> tamanio=tamanio;
 			this-> capacidad_audicion=capacidad_audicion;
@@ -37,11 +37,11 @@ class Orejas{
 			return this->tamanio;
 		}//Get del tamanio de las orejas
 		
-		void setCapacidad_audicion(string capacidad_audicion){
-			this->capacidad_audicion.assign(capacidad_audicion);
+		void setCapacidad_audicion(int capacidad_audicion){
+			this->capacidad_audicion=capacidad_audicion;
 		}//Set del capacidad audicion
 		
-		string getCapacidad_audicion(){
+		int getCapacidad_audicion(){
 			return this->capacidad_audicion;
 		}//Get del vision nocturna
 		

@@ -124,6 +124,11 @@ class Animal{
 			" Nombre del animal: "<<nombre_animal<<
 			" Tamaño del animal: "<<tamanio_animal<<
 			" Tipo del animal: "<<tipo_animal<<endl;
+			patas->print();
+			pelaje->print();
+			ojos->print();
+			orejas->print();
+			cola->print();
 		}//Fin del print
 		~Animal(){
 		}//Fin del destructor
