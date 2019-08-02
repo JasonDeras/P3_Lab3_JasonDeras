@@ -208,11 +208,33 @@ class Zoologico{
 		}//Fin del metodo que remueve un solo animal de la zona sabana
 		
 		void print(){
-			
 			cout<<"Nombre: "<<nombre<<
 			" Tamaño: "<<tamanio<<
 			" Capacidad de personas: "<<capacidad_personas<<endl;
 			
+			cout<<"Animales en la zona artica"<<endl;
+			for(int i=0;i<zona_artica.size();i++){
+        		zona_artica.at(i)->print();
+			}//Fin del for de la zona artica
+			cout<<"\n\n\n\n";
+			
+			cout<<"Animales en la zona desertica"<<endl;
+			for(int i=0;i<zona_desertica.size();i++){
+        		zona_desertica.at(i)->print();
+			}//Fin del for de la zona desertica
+			cout<<"\n\n\n\n";
+			
+			cout<<"Animales en la zona de jungla tropical"<<endl;
+			for(int i=0;i<zona_de_jungla_tropical.size();i++){
+        		zona_de_jungla_tropical.at(i)->print();
+			}//Fin del for de la zona de jungla tropical
+			cout<<"\n\n\n\n";
+			
+			cout<<"Animales en la zona zabana"<<endl;
+			for(int i=0;i<zona_sabana.size();i++){
+        		zona_sabana.at(i)->print();
+			}//Fin del for de la zona zabana
+			cout<<"\n\n\n\n";
 		}//Fin del metodo to string
 		
 		~Zoologico(){
