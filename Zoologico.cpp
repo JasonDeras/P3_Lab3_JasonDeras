@@ -36,7 +36,7 @@ class Zoologico{
 			this->tamanio=tamanio;
 			this->capacidad_personas=capacidad_personas;
 			
-		}//Constructor sobrecargada
+		}//Constructor sobrecargado
 		
 		void setNombre(string nombre){
 			this->nombre.assign(nombre);

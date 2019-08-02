@@ -29,7 +29,7 @@ class Patas{
 			this-> largo_patas=largo_patas;
 			this-> tipo_patas=tipo_patas;
 			
-		}//Fin del constructor simple
+		}//Fin del constructor sobrecargado
 	
 		void setCantidad_patas(int cantidad_patas){
 			this->cantidad_patas=cantidad_patas;

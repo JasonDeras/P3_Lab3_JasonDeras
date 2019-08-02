@@ -29,7 +29,7 @@ class Pelaje{
 			this-> grosor=grosor;
 			this-> largo=largo;
 		
-		}//Fin del constructor simple
+		}//Fin del constructor sobrecargado
 	
 		void setColor(string color){
 			this->color.assign(color);

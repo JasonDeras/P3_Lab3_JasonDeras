@@ -27,7 +27,7 @@ class Ojos{
 			this-> color=color;
 			this-> vision_nocturna=vision_nocturna;
 		
-		}//Fin del constructor simple
+		}//Fin del constructor sobrecargado
 	
 		void setColor(string color){
 			this->color.assign(color);

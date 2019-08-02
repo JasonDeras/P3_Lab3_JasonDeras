@@ -31,7 +31,7 @@ class Animal{
 			this-> tamanio_animal=tamanio_animal;
 			this-> tipo_animal=tipo_animal;
 			
-		}//Fin del constructor simple
+		}//Fin del constructor sobrecargado
 	
 		void setNombre_especie(string nombre_especie){
 			this->nombre_especie.assign(nombre_especie);

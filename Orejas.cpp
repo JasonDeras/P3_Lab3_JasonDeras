@@ -27,7 +27,7 @@ class Orejas{
 			this-> tamanio=tamanio;
 			this-> capacidad_audicion=capacidad_audicion;
 		
-		}//Fin del constructor simple
+		}//Fin del constructor sobrecargado
 	
 		void setTamanio(string tamanio){
 			this->tamanio.assign(tamanio);
