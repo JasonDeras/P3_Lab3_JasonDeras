@@ -10,7 +10,7 @@ class Ojos{
 	
 	private:
 		
-		string color;
+		string color_ojo;
 		string vision_nocturna;
 		
 		
@@ -22,19 +22,19 @@ class Ojos{
 			
 		}//Fin del constructor simple
 		
-		Ojos(string color,string vision_nocturna){
+		Ojos(string color_ojo,string vision_nocturna){
 		
-			this-> color=color;
+			this-> color_ojo=color_ojo;
 			this-> vision_nocturna=vision_nocturna;
 		
 		}//Fin del constructor sobrecargado
 	
-		void setColor(string color){
-			this->color.assign(color);
+		void setColor_ojo(string color_ojo){
+			this->color_ojo.assign(color_ojo);
 		}//Set del color
 		
 		string getColor(){
-			return this->color;
+			return this->color_ojo;
 		}//Get del color
 		
 		void setVision_nocturna(string vision_nocturna){
@@ -46,7 +46,7 @@ class Ojos{
 		}//Get del vision nocturna
 		
 		void print(){
-			cout<<"Color de los ojos: "<<color<<
+			cout<<"Color de los ojos: "<<color_ojo<<
 			" Vision Nocturna: "<<vision_nocturna<<endl;
 		}//Fin del print
 		

@@ -12,6 +12,7 @@ class Zoologico{
 	
 	private:
 		
+		Animal* animal;
 		string nombre;
 		double tamanio;
 		int capacidad_personas;
