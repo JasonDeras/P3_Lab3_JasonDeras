@@ -1,6 +1,4 @@
 #include<iostream>
-#include<vector>
-#include<bits/stdc++.h>
 #include<string.h>
 
 #ifndef ANIMAL_CPP
@@ -67,12 +65,13 @@ class Animal{
 			return this->tipo_animal;
 		}//Get del tipo_animal
 		
-		~Animal(){
-			
+		void print(){
 			cout<<"Nombre de especie: "<<nombre_especie<<
 			" Nombre del animal: "<<nombre_animal<<
 			" Tamaño del animal: "<<tamanio_animal<<
 			" Tipo del animal: "<<tipo_animal<<endl;
+		}//Fin del print
+		~Animal(){
 		}//Fin del destructor
 };
 
