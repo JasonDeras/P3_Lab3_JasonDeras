@@ -1,6 +1,8 @@
 #include<iostream>
 #include<string.h>
-
+#include<vector>
+#include<bits/stdc++.h>
+#include "Clase.cpp"
 #ifndef ALUMNO_CPP
 #define ALUMNO_CPP
 
