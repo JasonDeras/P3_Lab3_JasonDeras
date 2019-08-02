@@ -30,7 +30,11 @@ class Animal{
 	public:
 		
 		Animal(){
-			
+			patas=new Patas();
+			pelaje=new Pelaje();
+			ojos=new Ojos();
+			orejas=new Orejas();
+			cola=new Cola();
 		}//Fin del constructor simple
 		
 		Animal(string nombre_especie,string nombre_animal,string tamanio_animal,string tipo_animal ){
