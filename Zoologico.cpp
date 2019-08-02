@@ -3,11 +3,6 @@
 #include<bits/stdc++.h>
 #include<string.h>
 #include "Animal.cpp"
-#include "Patas.cpp"
-#include "Pelaje.cpp"
-#include "Ojos.cpp"
-#include "Orejas.cpp"
-#include "Cola.cpp"
 #ifndef ZOOLOGICO_CPP
 #define ZOOLOGICO_CPP
 
@@ -17,12 +12,6 @@ class Zoologico{
 	
 	private:
 		
-		Animal* animal;
-		Patas* patas;
-		Pelaje* pelaje;
-		Ojos* ojos;
-		Orejas* orejas;
-		Cola* cola;
 		string nombre;
 		double tamanio;
 		int capacidad_personas;
@@ -38,25 +27,13 @@ class Zoologico{
 		
 		Zoologico(){
 			animal=new Animal();
-			patas=new Patas();
-			pelaje=new Pelaje();
-			ojos=new Ojos();
-			orejas=new Orejas();
-			cola=new Cola();
 		}//Fin del constructor simple
 		
-		Zoologico(Animal* animal,Patas* patas,Pelaje* pelaje,Ojos* ojos,Orejas* orejas,Cola* cola,string nombre,double tamanio,int capacidad_personas){
-			
+		Zoologico(Animal* animal,string nombre,double tamanio,int capacidad_personas){
 			this->animal=animal;
-			this->patas=patas;
-			this->pelaje=pelaje;
-			this->ojos=ojos;
-			this->orejas=orejas;
-			this->cola=cola;
 			this->nombre=nombre;
 			this->tamanio=tamanio;
-			this->capacidad_personas=capacidad_personas;
-			
+			this->capacidad_personas=capacidad_personas;	
 		}//Constructor sobrecargado
 		
 		void setAnimal(Animal* animal){
@@ -66,46 +43,6 @@ class Zoologico{
 		Animal* getAnimal(){
 			return animal;
 		}//Fin del metodo get del animal
-		
-		void setPatas(Patas* patas){
-			this->patas=patas;
-		}//Fin del metodo set de las patas
-		   
-		Patas* getPatas(){
-			return patas;
-		}//Fin del metodo get de las patas
-		
-		void setPelaje(Pelaje* pelaje){
-			this->pelaje=pelaje;
-		}//Fin del metodo set del pelaje
-		   
-		Pelaje* getPelaje(){
-			return pelaje;
-		}//Fin del metodo get del pelaje
-		
-		void setOjos(Ojos* ojos){
-			this->ojos=ojos;
-		}//Fin del metodo set de los ojos
-		   
-		Ojos* getOjos(){
-			return ojos;
-		}//Fin del metodo get de los ojos
-		
-		void setOrejas(Orejas* orejas){	
-			this->orejas=orejas;
-		}//Fin del metodo set de las orejas
-		   
-		Orejas* getOrejas(){
-			return orejas;
-		}//Fin del metodo get de las orejas
-		
-		void setCola(Cola* cola){
-			this->cola=cola;
-		}//Fin del metodo set de la cola
-		   
-		Cola* getCola(){
-			return cola;
-		}//Fin del metodo get de la cola
 		
 		void setNombre(string nombre){
 			this->nombre.assign(nombre);
@@ -211,7 +148,6 @@ class Zoologico{
 			cout<<"Nombre: "<<nombre<<
 			" Tamaño: "<<tamanio<<
 			" Capacidad de personas: "<<capacidad_personas<<endl;
-			
 			cout<<"Animales en la zona artica"<<endl;
 			for(int i=0;i<zona_artica.size();i++){
         		zona_artica.at(i)->print();
