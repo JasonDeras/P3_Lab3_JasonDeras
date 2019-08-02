@@ -69,7 +69,37 @@ class Maestro{
         string getProfesion(){
             return this->profesion;
         }//Fin del metodo get del nombre
-		
+        
+        void setClases(vector<Clase*>clases){
+            this->clases=clases;
+        }//Fin del metodo set de las clases
+             
+        void setClase(Clase*clase){
+            this->clases.push_back(clase);
+        }//Fin del metodo set de una sola clase
+             
+        vector<Clase*> getClases(){
+            return this->clase;
+        }//Fin del metodo get del vector de las clases
+        
+        void remClase(int p){
+        	clases.erase(clases.begin()+p);
+        }//Fin del metodo que elimina una clase
+        
+		void print(){
+			
+			cout<<"Nombre: "<<nombre<<
+			" Usuario: "<<usuario<<
+			" Contraseña: "<<contrasenia<<
+			" Pregrado: "<<pregrado<<
+			" Profesion: "<<profesion<<endl;
+			cout<<"Clases"<<endl;
+			for(int i=0;i<clases.size();i++){
+				cout<<clases.at(i)<<endl;
+			}//Fin del for de las clases
+			
+		}//Fin del metodo print
+            
 		~Maestro(){
 			
 		}//Fin del destructor

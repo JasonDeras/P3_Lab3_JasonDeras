@@ -88,7 +88,37 @@ class Alumno{
         string getCarrera(){
             return this->carrera;
         }//Fin del metodo get de la carrera
-		     
+        
+        void setClases(vector<Clase*>clases){
+            this->clases=clases;
+        }//Fin del metodo set de las clases
+             
+        void setClase(Clase*clase){
+            this->clases.push_back(clase);
+        }//Fin del metodo set de una sola clase
+             
+        vector<Clase*> getClases(){
+            return this->clases;
+        }//Fin del metodo get del vector de las clases
+        
+        void remClase(int p){
+        	clases.erase(clases.begin()+p);
+        }//Fin del metodo que elimina una clase
+        
+		void print(){
+			
+			cout<<"Nombre: "<<nombre<<
+			" Usuario: "<<usuario<<
+			" Contraseña: "<<contrasenia<<
+			" Genero: "<<genero<<
+			"Carrera: "<<carrera<<endl;
+			cout<<"Clases"<<endl;
+			for(int i=0;i<clases.size();i++){
+				cout<<clases.at(i)<<endl;
+			}//Fin del for de las clases
+			
+		}//Fin del metodo print
+              
 		~Alumno(){
 			
 		}//Fin del destructor

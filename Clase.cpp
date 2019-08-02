@@ -82,12 +82,42 @@ class Clase{
         
 		void setMaestro(Maestro*maestro){
 			this->maestro=maestro;
-		}//Fin del metodo set de la pantalla   
+		}//Fin del metodo set de la maestro   
 		   
 		Maestro* getMaestro(){
 			return maestro;
-		}//Fin del metodo get de la pantalla 
+		}//Fin del metodo get del maestro
 		 
+		 void setAlumnos(vector<Alumno*>alumnos){
+            this->alumnos=alumnos;
+        }//Fin del metodo set de los alumnos
+             
+        void setAlumno(Alumno*alumno){
+            this->alumnos.push_back(alumno);
+        }//Fin del metodo set de una sola clase
+             
+        vector<Alumno*> getAlumnos(){
+            return this->alumnos;
+        }//Fin del metodo get del vector de alumnos
+        
+        void remAlumnos(int p){
+        	alumnos.erase(alumnos.begin()+p);
+        }//Fin del metodo que elimina una clase
+        
+		void print(){
+			
+			cout<<"Nombre: "<<nombre<<
+			" Id: "<<id<<
+			" Capacidad de alumnos: "<<capacidad<<
+			" Alumnos Actuales: "<<alumnos_ac<<
+			" Maestro: "<<maestro<<endl;
+			cout<<"Alumnos cursando la clase"<<endl;
+			for(int i=0;i<alumnos.size();i++){
+				cout<<alumnos.at(i)<<endl;
+			}//Fin del for de las clases
+			
+		}//Fin del metodo print
+        
 		~Clase(){
 			
 		}//Fin del destructor
