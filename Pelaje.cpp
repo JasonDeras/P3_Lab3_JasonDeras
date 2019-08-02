@@ -37,7 +37,7 @@ class Pelaje{
 		
 		string getColor(){
 			return this->color;
-		}//Get del la cantidad de pastas
+		}//Get del color
 		
 		void setGrosor(string grosor){
 			this->grosor.assign(grosor);
