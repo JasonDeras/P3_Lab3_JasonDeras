@@ -103,11 +103,11 @@ using namespace std;
 						break;
 						
 						case 3:
-							tipo_animal="Zona de jungla Tropical";
+							tipo_animal="Zona de Jungla Tropical";
 						break;
 						
 						case 4:
-							tipo_animal="Zona de Zabana";
+							tipo_animal="Zona de Sabana";
 						break;
 						
 						default:
@@ -184,11 +184,23 @@ using namespace std;
 				break;
 				
 				case 2:
-					
+					for(int i=0;i<espera.size();i++){
+						if(espera.at(i)-> getTipo_animal()=="Zona Artica"){
+							z->setZona_artica(espera.at(i));
+						}else if (espera.at(i)-> getTipo_animal()=="Zona Desertica"){
+							z->setZona_desertica(espera.at(i));
+						}else if(espera.at(i)-> getTipo_animal()=="Zona de Jungla Tropical"){
+							z->setZona_de_jungla_tropical(espera.at(i));
+						}else if(espera.at(i)-> getTipo_animal()=="Zona de Sabana"){
+							z->setZona_sabana(espera.at(i));
+						}//Fin del if de las zonas de los animales
+					}//Fin del for de asignacion al zoologico
+					cout<<"\n\n\n\n";
 				break;
 				
 				case 3:
 					z->print();
+					cout<<"\n\n\n\n";
 				break;
 				
 				case 4:
