@@ -37,7 +37,7 @@ class Animal{
 			cola=new Cola();
 		}//Fin del constructor simple
 		
-		Animal(string nombre_especie,string nombre_animal,string tamanio_animal,string tipo_animal ){
+		Animal(Patas* patas,Pelaje* pelaje,Ojos* ojos,Orejas* orejas,Cola* cola,string nombre_especie,string nombre_animal,string tamanio_animal,string tipo_animal ){
 			
 			this->patas=patas;
 			this->pelaje=pelaje;

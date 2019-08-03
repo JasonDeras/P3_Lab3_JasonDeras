@@ -119,7 +119,7 @@ class Zoologico{
             return this->zona_de_jungla_tropical;
         }//Fin del metodo get del vector de zona de jungla tropical
         
-        void remZona_de_jungla_tropical(int p){
+        void remZona_de_jungla_tropical(){
         	zona_de_jungla_tropical.clear();
         	if(zona_de_jungla_tropical.empty()){
         		zona_de_jungla_tropical.clear();
@@ -138,7 +138,7 @@ class Zoologico{
             return this->zona_sabana;
         }//Fin del metodo get del vector de la zona sabana
         
-        void remZona_sabana(int p){
+        void remZona_sabana(){
         	zona_sabana.clear();
         	if(zona_sabana.empty()){
         		zona_sabana.clear();
@@ -147,7 +147,7 @@ class Zoologico{
 		
 		void print(){
 			cout<<"Nombre: "<<nombre<<
-			" Tamaño: "<<tamanio<<
+			" Tamaño de zoologico: "<<tamanio<<
 			" Capacidad de personas: "<<capacidad_personas<<endl;
 			cout<<"Animales en la zona artica"<<endl;
 			for(int i=0;i<zona_artica.size();i++){
